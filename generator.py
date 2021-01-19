@@ -41,4 +41,3 @@ def generate_to_10(questions: int, max_num: int, systems: list):
 def generate_all(questions_to10, max_num_to10, systems_to10, questions_from10, max_num_from10, systems_from10):
     return '\n'.join(generate_to_10(questions_to10, max_num_to10, systems_to10)) + '</br>From 10</br>' + \
            '\n'.join(generate_from_10(questions_from10, max_num_from10, systems_from10))
-
