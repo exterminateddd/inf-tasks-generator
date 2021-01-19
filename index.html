@@ -12,23 +12,65 @@
 </head>
 <body class="page">
     <main class="main">
-        <form class="form" id="nonbinary">
-        <fieldset class="form__question">
-            <label class="form__item-title">Количество вопросов</label>
-            <input type="number" class="form__input" min="1" max="80" placeholder="Напишите цифру" id="quantity" required>
-        </fieldset>
-        <fieldset class="form__question">
-            <label class="form__item-title">Наибольшое число в 10-чной системе</label>
-            <input type="number" class="form__input" min="1" placeholder="Напишите целое число" id="max" required>
-        </fieldset>
-        <fieldset class="form__question">
-            <label class="form__item-title">Какие системы счисления включить</label>
-            <input type="text" class="form__input" placeholder="Введите через числа через запятую, без пробелов"
-            id="systems" required>
-        </fieldset>
-        <button type="submit" class="form__submit">Отправить</button>
-        <p class="form__answer"></p>
-        </form>
+        <h1 class="main__title">Граббер данных школьного портала</h1>
+        <section class="select">
+            <button id="toX" class="select__button select__button-selected">Из 10-чной в n-ную</button>
+            <button id="to10" class="select__button">Из n-ной в 10-чную</button>
+            <button id="toReg" class="select__button">Регистрация</button>
+        </section>
+        <section class="routes">
+            <form class="form" id="from10-x">
+                <fieldset class="form__question">
+                    <label class="form__item-title">Количество вопросов</label>
+                    <input type="number" class="form__input" min="1" max="80" placeholder="Напишите цифру" id="quantity" required>
+                </fieldset>
+                <fieldset class="form__question">
+                    <label class="form__item-title">Наибольшое число в 10-чной системе</label>
+                    <input type="number" class="form__input" min="1" placeholder="Напишите целое число" id="max" required>
+                </fieldset>
+                <fieldset class="form__question">
+                    <label class="form__item-title">Какие системы счисления включить</label>
+                    <input type="text" class="form__input" placeholder="Введите через числа через запятую, без пробелов"
+                    id="systems" required>
+                </fieldset>
+                <button type="submit" class="form__submit">Отправить</button>
+                <p class="form__answer"></p>
+                </form>
+                <form class="form none" id="fromx-10">
+                    <fieldset class="form__question">
+                        <label class="form__item-title">wdqwdqwdqwd</label>
+                        <input type="number" class="form__input" min="1" max="80" placeholder="Напишите цифру" id="quantity" required>
+                    </fieldset>
+                    <fieldset class="form__question">
+                        <label class="form__item-title">Наибольшое число в 10-чной системе</label>
+                        <input type="number" class="form__input" min="1" placeholder="Напишите целое число" id="max" required>
+                    </fieldset>
+                    <fieldset class="form__question">
+                        <label class="form__item-title">Какие системы счисления включить</label>
+                        <input type="text" class="form__input" placeholder="Введите через числа через запятую, без пробелов"
+                        id="systems" required>
+                    </fieldset>
+                    <button type="submit" class="form__submit">Отправить</button>
+                    <p class="form__answer"></p>
+                    </form>
+                    <form class="form none" id="registration">
+                        <fieldset class="form__question">
+                            <label class="form__item-title">zxczxczxcxzczxc</label>
+                            <input type="number" class="form__input" min="1" max="80" placeholder="Напишите цифру" id="quantity" required>
+                        </fieldset>
+                        <fieldset class="form__question">
+                            <label class="form__item-title">Наибольшое число в 10-чной системе</label>
+                            <input type="number" class="form__input" min="1" placeholder="Напишите целое число" id="max" required>
+                        </fieldset>
+                        <fieldset class="form__question">
+                            <label class="form__item-title">Какие системы счисления включить</label>
+                            <input type="text" class="form__input" placeholder="Введите через числа через запятую, без пробелов"
+                            id="systems" required>
+                        </fieldset>
+                        <button type="submit" class="form__submit">Отправить</button>
+                        <p class="form__answer"></p>
+                        </form>        
+        </section>
     </main>
     <script src="index.js" type="module"></script>
 </body>
