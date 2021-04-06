@@ -84,6 +84,14 @@ fieldset {
     max-width: 500px;
     text-align: center;
 }
+.download__link {
+    text-decoration: none;
+    margin-left: 10px;
+    text-shadow: 1px 1px 3px black;
+    text-decoration: underline;
+    border-radius: 8px;
+    color: white;
+}
 .select {
     width: 80%;
     margin: 0 auto;
@@ -104,11 +112,64 @@ fieldset {
 }
 .select__button:hover {
     cursor: pointer;
-    opacity: .8;
+    opacity: .7;
 }
 .select__button-selected {
     opacity: 1;
 }
 .none {
     display: none;
+}
+.notification {
+    margin-top: 30px;
+    margin-bottom: -30px;
+    width: 80%;
+    display: flex;
+    background-color: darkgreen;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.notification__message{
+    color: white;
+}
+.answer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.answer__message {
+    color: white;
+}
+.none {
+    display: none;
+}
+.variables {
+    width: 80%;
+    margin: 50px auto -30px;
+}
+.variables__question {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.variables__title {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variables__input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    z-index: 300;
 }
