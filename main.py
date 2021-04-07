@@ -60,7 +60,8 @@ def gen():
         max_from10 = json_['from10']['maxNum']
         systems_from10 = json_['from10']['systems']
         questions_from10 = json_['from10']['questions']
-    except KeyError:
+    except Exception as e:
+        print(e.args)
         return jsonify({
             'success': False
         })
